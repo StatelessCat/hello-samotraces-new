@@ -1,8 +1,8 @@
 # hello-samotraces-new
-npm install -d
+```npm install -d```
 
-bower install
+```bower install```
 
-grunt connect
+```grunt connect```
 
 --> localhost:8000
