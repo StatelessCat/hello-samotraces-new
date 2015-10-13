@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/bower_components/samotraces/dist/vendors.js"></script>
+    <script src="/bower_components/samotraces/dist/samotraces.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bower_components/samotraces/dist/samotraces.css">
+  </head>
+  <body>
+    <div id="my-widget"></div>
+    <script>
+        function init() {
+            var trace = new Samotraces.LocalTrace();
+            var tw = new Samotraces.TimeWindow({start: 0,end: 20});
+            trace.create_obsel({type: 'click', begin: 1});
+            trace.create_obsel({type: 'click', begin: 5});
+            trace.create_obsel({type: 'click', begin: 12});
+
+            var el = document.querySelector('#my-widget');
+            var options = {
+              "default": {
+                "icon":"./images/help.png", "width":16, "height":16, "y":17
+              }
+            };
+            new Samotraces.Ui.Widgets.TraceDisplayIcons(el, trace, tw, options);
+        }
+        window.addEventListener('DOMContentLoaded', init );
+    </script>
+  </body>
+</html>

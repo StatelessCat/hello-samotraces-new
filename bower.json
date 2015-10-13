@@ -1,0 +1,18 @@
+{
+  "name": "hello-samotraces-new",
+  "version": "0.0.1",
+  "homepage": "https://github.com/StatelessCat/hello-samotraces-new",
+  "authors": [
+    "Raphael Cazenave-Leveque <raphael.cazenave@gmail.com>"
+  ],
+  "description": "hello-samotraces-new",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+  ],
+  "dependencies": {
+    "samotraces": "https://github.com/liris-tweak/samotraces.js.git#v0.21.0"
+  }
+}
